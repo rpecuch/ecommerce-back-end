@@ -22,5 +22,6 @@ sequelize.sync({ force: false }).then(() => {
 //running put products results in empty object. but does update the data
 //tags post works but does not have associated products (not sure if this is actually an issue)
 
+//GOOD:
 //all categories routes look good
 //tags get good, put good, delete good
