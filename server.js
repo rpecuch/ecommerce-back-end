@@ -17,11 +17,4 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 //TODO:
-//bugs: running get products makes category_id and categories show up in 2 sep places instead of together
-//running post products just results in id productid and tagid. but does add to data
-//running put products results in empty object. but does update the data
-//tags post works but does not have associated products (not sure if this is actually an issue)
-
-//GOOD:
-//all categories routes look good
-//tags get good, put good, delete good
+//running put products updates data but does not update tags 
