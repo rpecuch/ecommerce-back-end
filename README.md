@@ -78,7 +78,8 @@ In addition to these packages, the MySQL shell and Insomnia application are need
   
 Now that the application is up and running, the user can use Insomnia to view data from, add data to, modify data from, or delete data from the database. 
 
-Insert demo video
+[E-Commerce Back-End Demo.webm](https://user-images.githubusercontent.com/109092365/191869141-7780792b-3ca1-407c-8a72-57e9d1a2a478.webm)
+
 
   ## License
 
