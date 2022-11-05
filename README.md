@@ -2,6 +2,12 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+  ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+  ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+  ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+  ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
+
   ## Description
 
 The purpose of this project was to utilize Sequelize to build the back-end of an Internet retail application to allow database interaction. This application utilizes GET, POST, PUT, and DELETE methods to allow viewing, adding to, modifying, and deleting data from an e-commerce database. During the development process, I became more comfortable with writing back-end code for various API routes, creating Sequelize models, and utilizing relationships between these models.
