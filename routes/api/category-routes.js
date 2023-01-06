@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// import models
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
@@ -23,7 +24,7 @@ router.get('/:id', async (req, res) => {
       //include associated products
       include: [{ model: Product }]
     });
-
+    // if no matching id
     if (!categoryData) {
       res.status(404).json({ message: 'No category found with this id!' });
       return;
@@ -73,7 +74,7 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-
+    // if no matching id
     if (!categoryData) {
       res.status(404).json({ message: 'No category found with that id!' });
       return;

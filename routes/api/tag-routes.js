@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
       // JOIN with products, using the producttag through table
       include: [{ model: Product, through: ProductTag}]
     });
-
+    // if no matching id
     if (!tagData) {
       res.status(404).json({ message: 'No tag found with this id!' });
       return;
@@ -73,7 +73,7 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id
       }
     });
-
+    // if no matching id
     if (!tagData) {
       res.status(404).json({ message: 'No tag found with this id!' });
       return;

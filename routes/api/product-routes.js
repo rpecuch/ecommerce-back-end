@@ -1,4 +1,5 @@
 const router = require('express').Router();
+// import models
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
@@ -23,7 +24,7 @@ router.get('/:id', async (req, res) => {
       // JOIN with tags, using the producttag through table
       include: [{model: Category}, { model: Tag, through: ProductTag}]
     });
-
+    // if no matching id
     if (!productData) {
       res.status(404).json({ message: 'No product found with this id!' });
       return;
@@ -112,6 +113,7 @@ router.delete('/:id', async (req, res) => {
       }
     });
 
+    // if no matching id
     if (!productData) {
       res.status(404).json({ message: 'No product found with this id!' });
       return;
