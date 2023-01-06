@@ -12,6 +12,7 @@ Product.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      // for product belongs to many tags relationship
       primaryKey: true,
       autoIncrement: true
     },
@@ -34,6 +35,7 @@ Product.init(
         isNumeric: true
       }
     },
+    // for product belongs to category relationship
     category_id: {
       type: DataTypes.INTEGER,
       references: {

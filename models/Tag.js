@@ -10,6 +10,7 @@ Tag.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      // for tag belongs to many products relationship
       primaryKey: true,
       autoIncrement: true
     },

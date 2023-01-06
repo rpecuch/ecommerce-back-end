@@ -1,3 +1,4 @@
+// protect environmental variables
 require('dotenv').config();
 
 const Sequelize = require('sequelize');

@@ -10,6 +10,7 @@ Category.init(
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      // for category has many products relationship
       primaryKey: true,
       autoIncrement: true
     },
